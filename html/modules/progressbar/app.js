@@ -107,11 +107,3 @@ class ProgressBar extends HTMLElement {
 }
 
 customElements.define("progress-bar", ProgressBar);
-
-const progressBar = document.querySelector("progress-bar");
-progressBar.min = 0;
-progressBar.max = 100;
-
-setInterval(() => {
-    progressBar.value = Math.floor(Math.random() * 100);
-}, 1000);
