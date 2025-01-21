@@ -32,13 +32,40 @@
                 <div class="radiobuttons">
                     <label for="sex">Sex</label>
                     <div>
-                        <span>
+                        <span
+                            onclick="if (event.target.nodeName !== 'INPUT') this.querySelector('input').click()"
+                        >
                             <input name="sex" type="radio" id="male" />
                             Male
                         </span>
-                        <span>
+                        <span
+                            onclick="if (event.target.nodeName !== 'INPUT') this.querySelector('input').click()"
+                        >
                             <input name="sex" type="radio" id="female" />
                             Female
+                        </span>
+                    </div>
+                </div>
+                <div class="checkbuttons">
+                    <label for="owner">Owns</label>
+                    <div>
+                        <span
+                            onclick="if (event.target.nodeName !== 'INPUT') this.querySelector('input').click()"
+                        >
+                            <input name="owner" type="checkbox" id="vehicle" />
+                            Vehicle
+                        </span>
+                        <span
+                            onclick="if (event.target.nodeName !== 'INPUT') this.querySelector('input').click()"
+                        >
+                            <input name="sex" type="checkbox" id="house" />
+                            House
+                        </span>
+                        <span
+                            onclick="if (event.target.nodeName !== 'INPUT') this.querySelector('input').click()"
+                        >
+                            <input name="owner" type="checkbox" id="business" />
+                            Business
                         </span>
                     </div>
                 </div>
